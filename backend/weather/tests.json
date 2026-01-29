@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Get weather for city",
+      "method": "GET",
+      "path": "/?city=Москва",
+      "expectedStatus": 200,
+      "expectedBody": {
+        "temp": "string",
+        "condition": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
